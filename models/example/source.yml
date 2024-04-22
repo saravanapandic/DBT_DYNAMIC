@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCH_SF1000 
+    tables:
+      - name: LINEITEM
+      - name: CUSTOMER
+      
+      
+
+ 

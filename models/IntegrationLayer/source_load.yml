@@ -1,0 +1,47 @@
+version: 2
+
+sources:
+  - name: source_loaded
+    database: dbt_vs_csp
+    schema: source_loaded
+    tables:
+      - name: customer
+        columns:
+          - name: c_custkey
+            data_type: number
+          - name: c_name
+            data_type: varchar
+          - name: c_address
+            data_type: varchar
+          - name: c_nationkey
+            data_type: number
+          - name: c_phone
+            data_type: varchar
+          - name: c_acctbal
+            data_type: number
+          - name: c_mktsegment
+            data_type: varchar
+          - name: c_comment
+            data_type: varchar
+
+      - name: orders
+        columns:
+          - name: o_orderkey
+            data_type: number
+          - name: o_custkey
+            data_type: number
+          - name: o_orderstatus
+            data_type: boolean
+          - name: o_totalprice
+            data_type: number
+          - name: o_orderdate
+            data_type: date
+          - name: o_orderpriority
+            data_type: varchar
+          - name: o_clerk
+            data_type: varchar
+          - name: o_shippriority
+            data_type: number
+          - name: o_comment
+            data_type: varchar
+
